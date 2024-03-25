@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    animation-name: redtosand;
+    animation-duration: 50.04s;
+    animation-direction: forward;
+    animation-iteration-count: infinite;
+    color: whitesmoke;
+    font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+    letter-spacing: 2px;
+    font-size: 36pt;
+    text-align: left;
+}
+
+p {
+    margin: 0px;
+}
+
+#center1, #center2, #center3, #center4, #center5, #center6 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes redtosand {
+    from {
+        background-color: darkred;
+    }
+    to {
+        background-color: sandybrown;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    from, 0%, to {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+#flash {
+    animation-name: flash;
+    animation-duration: .1s;
+    animation-iteration-count: 70;
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10, .text11, .text12, .text13 {
+    margin-top: 1%;
+    opacity: 0;
+    animation-name: fadeInOut;
+    z-index: 10;
+}
+
+.text1 { animation-delay: 3s; animation-duration: 10s; z-index: 20; }
+.text2 { animation-delay: 5s; animation-duration: 7s; }
+.text3 { animation-delay: 10s; animation-duration: 7s; }
+.text4 { animation-delay: 13s; animation-duration: 10s; }
+.text5 { animation-delay: 21s; animation-duration: 6s; }
+.text6 { animation-delay: 27s; animation-duration: 5s; }
+.text7 { animation-delay: 30s; animation-duration: 6s; }
+.text8 { animation-delay: 35s; animation-duration: 5s; }
+.text9 { animation-delay: 39s; animation-duration: 5s; }
+.text10 { animation-delay: 43s; animation-duration: 3s; }
+.text11 { animation-delay: 50s; animation-duration: 4s; z-index: 7.5; }
+.text12 { animation-delay: 52s; animation-duration: 8s; z-index: 7.5; }
+.text13 { animation-delay: 56s; animation-duration: 8s; z-index: 7.5; }
+
+a {
+    font-size: 15px;
+}
