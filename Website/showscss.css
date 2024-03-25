@@ -1,0 +1,94 @@
+body {
+  margin: 20px;
+  font-family: "Poppins";
+  background: #4A917A;
+}
+
+/* List Styles */
+ul, li {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Header Styles */
+header {
+  max-width: 1200px;
+  margin: 40px auto;
+  border-bottom: 1px solid #bbc7c7;
+}
+
+/* Grid Container Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+article.featured {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  border-bottom: 1px solid #bbc7c7;
+  padding-bottom: 40px;
+}
+
+/* Article Image Styles */
+article img, article.featured img {
+  width: 100%;
+  border: 4px solid #fff;
+  border-radius: 8px;
+}
+
+/* Paragraph and Heading Styles */
+article p, .article h3 {
+  margin: 20px 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 980px) {
+  article {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  article, article.featured {
+    display: block;
+    margin: 0 20px;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: "Yatra One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.topnav a:hover {
+  background-color: #D73A3C;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
