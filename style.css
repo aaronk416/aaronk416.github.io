@@ -149,7 +149,7 @@ ul {
 
 .tophalf {
   position: relative;
-  background: url("images/theater.jpg") no-repeat;
+  background: url("css/images/theater.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
