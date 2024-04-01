@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>HOME</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">   
-  <link rel="stylesheet" href="external.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<header>
-  <div id="mobileNav">
-    <div class="mobileNavBar">
-      <div id="siteName">Mobile Ver.</div>
-      <div id="hamburgerDiv">
-        <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Midterm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="home" class="tophalf">
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="pagetwo.html">Page 2</a>
+          <a href="pagethree.html">Page 3</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+              <a href="#">Link 5</a>
+            </div>
+          </div>
+        </div>
+        <form class="search" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+        </form>
       </div>
+      <div class="maintext">
+        <h2>Aaron Kim's<br />website midterm</h2>
+        <p>This is a website inspired by PetFinder.com</p>
+      </div>
+    </section>
+
+    <section id="list-topics" class="list-topics">
+      <div class="theGridContainer">
+        <a href="#" class="aGridItem">Image 1</a>
+        <a href="#" class="aGridItem">Image 2</a>
+        <a href="#" class="aGridItem">Image 3</a>
+        <a href="#" class="aGridItem">Image 4</a>
+      </div>
+    </section>
+
+    <div class="threegrids">
+      <a href="#" class="aGridItem">Show</a>
+      <a href="#" class="aGridItem">Show</a>
+      <a href="#" class="aGridItem">Show</a>
     </div>
-    <div id="theLinks">
-      <a href="position.html">Home</a>
-      <a href="basic_html-with_css-2.html">Page 1</a>
-    </div>
-  </div>
-  <nav class="topnav">
-    <a href="index.html">Home</a>
-    <a href="shows.html">Top Shows</a>
-    <a href="poem.html">Web Poem</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  <div id="mainDiv">
-    <h1>Hi, I'm Aaron.</h1>
-    <div class="content">
-      <p>My name is Aaron Kim. I am a senior, majoring in Emerging Media.</p>
-      <p>
-        I'm hoping to incorporate the skills I
-        learn from these classes and use them in my future career.
-      </p>
-    </div>
-  </div>
-  <div id="secondDiv">
-    <h1><a href="poem.html">Web Poem: Ozymandias</a></h1>
-  </div>
-  <div id="thirdDiv">
-    <h1>Midterm Ideas</h1>
-    <div class="content">
-      <p>My first possible website I want to recreate is Petfinder.com . I believe that this website is good to recreate because it has a lot of features that we have covered already in class. As you drop down images and references to other links.  I also really like the simplicity of this website and how it keeps everything nice and organized.</p>
-      <p>The other possible website I would like to recreate is the MIT edu website, and the reason for this is mainly because of layout design and how everything is just in one place. I also really like how every corner of the layout is used, and can be used by the user as well. It may seem like a lot at once when you first see it, but it actually is a simplistic design</p>
-    </div>
-  </div>
-</main>
-<script>
-  function myDropdownFunction() {
-    var linksDiv = document.getElementById("theLinks");
-    if (linksDiv.style.display === "block") {
-      linksDiv.style.display = "none";
-    } else {
-      linksDiv.style.display = "block";
-    }
-  }
-</script>
-</body>
+  </body>
 </html>
